@@ -1,9 +1,10 @@
 #include <iostream>
+#include "Work.h"
 
 using namespace std;
 
 int main()
 {
-	cout << "hi" << endl;
+    Work w = Work();
 	return 0;
 }

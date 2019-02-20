@@ -4,12 +4,13 @@ set(PROJECT_NAME WhatToDoNow)
 project(${PROJECT_NAME})
 
 set(EXECUTABLE_NAME WhatToDoNow)
-set(CMAKE_CXX_STANDAR 11)
+set(CMAKE_CXX_STANDAR 20)
 
 include_directories(../src)
 
 set(SOURCE_LIST 
-    ./src/Main.cpp
+    ./src/Main.cc
+    ./src/Work.cc
     )
 
 add_executable(${EXECUTABLE_NAME} ${SOURCE_LIST})
