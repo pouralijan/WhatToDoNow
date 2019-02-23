@@ -11,6 +11,7 @@ include_directories(../src)
 set(SOURCE_LIST 
     ./src/Main.cc
     ./src/Work.cc
+    ./src/WorksQueue.cc
     )
 
 add_executable(${EXECUTABLE_NAME} ${SOURCE_LIST})
