@@ -3,6 +3,14 @@ name: C/C++ CI
 on: [push]
 
 jobs:
+  clang-tidy:
+      name: CppCkeck
+      runs-on: ubuntu-latest
+      steps:
+        - name: CppCheck
+          uses: pouralijan/CppCheck@master
+      env:
+          DIRS: src
   build:
 
     runs-on: ubuntu-latest
@@ -13,12 +21,3 @@ jobs:
       run: ./build
     - name: run
       run: ./Release/WhatToDoNow
-      
-  clang-tidy:
-      name: CppCkech
-      runs-on: ubuntu-latest
-      steps:
-        - name: clang-tidy check
-          uses: pouralijan/CppCheck@master
-      env:
-          DIRS: src
