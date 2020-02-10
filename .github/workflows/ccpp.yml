@@ -3,7 +3,7 @@ name: C/C++ CI
 on: [push]
 
 jobs:
-  clang-tidy:
+  CppCkeck:
       name: CppCkeck
       runs-on: ubuntu-latest
       steps:
